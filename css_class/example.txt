@@ -28,3 +28,6 @@ value - type - rotate , scale , translate , skew
 
 ** translate function
 ** rotate function
+** scale function - zoom in >1 - zoom out <1
+** skew function - 
+** matrix function 
