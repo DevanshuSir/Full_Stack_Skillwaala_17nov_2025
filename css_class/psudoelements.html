@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: brown;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::first-letter{
+            color: green;
+            font-size: 40px;
+        }
+        h1::before{
+            content: "💡";
+        }
+        h1::after{
+            content: '😍';
+        }
+        label::after{
+            content: "*";
+            color: red;
+        }
+        body::selection{
+            background-color: black;
+            color: white;
+            
+        }
+
+        /* input::placeholder{
+            color: green;
+        }
+        input:focus{
+            color: tomato;
+        } */
+        ul li::marker{
+            color: red;
+            font-size: 25px;
+        }
+
+        input::file-selector-button {
+            background-color: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Devanshu Sir</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fuga aspernatur, doloribus explicabo reprehenderit aut obcaecati animi? Officia, a. Et culpa necessitatibus minima animi, delectus deserunt vero suscipit dicta cumque!</p>
+
+    <!-- <label for="">FirstName</label>
+    <input type="text" name="" id="" placeholder="Enter your name"> -->
+
+    <ul>
+        <li>DEvanshu</li>
+        <li>DEvanshu</li>
+        <li>DEvanshu</li>
+        <li>DEvanshu</li>
+    </ul>
+
+    <input type="file" name="" id="">
+
+</body>
+</html>

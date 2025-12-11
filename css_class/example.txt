@@ -1,0 +1,30 @@
+Syntax - pseudoClass
+
+Selector:pseudoClass{property:value}
+:hover 
+:firstChild
+:lastChild
+:nth-Child 
+:focus
+
+Syntax - pseudoElements
+
+Selector::pseudoElements{property:value}
+
+::first-Line
+::first-letter
+::before
+::after
+::selection
+::placeholder
+::marker
+
+
+selector{
+    transform:function(value)
+}
+
+value - type - rotate , scale , translate , skew
+
+** translate function
+** rotate function

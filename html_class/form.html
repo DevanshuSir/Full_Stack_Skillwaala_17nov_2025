@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tags</title>
+  </head>
+  <body>
+    <!-- windowKey + : -->
+
+    <!-- Get / Post  -->
+    <h1>Form 😍</h1>
+    <form action="" method="get">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="FirstName"
+        required
+      />
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="LastName"
+        required
+      />
+      <br /><br />
+      <label for="">Address</label>
+      <textarea name="address" id="" maxlength="10" minlength="2"></textarea>
+      <br /><br />
+      <label for="">Docs</label>
+      <input type="file" name="docs" id="" multiple />
+      <br /><br />
+      <label for="">Email</label>
+      <input type="email" name="useremail" id="" />
+      <br /><br />
+      <label for="">Dob</label>
+      <input type="date" name="dob" id="" />
+      <br /><br />
+      <label for="">Mobile</label>
+      <input type="number" name="mobilenumber" id="" />
+      <br /><br />
+      <label for="">Password</label>
+      <input type="password" name="pass" id="" />
+      <br /><br />
+      <label for="">Search Here..</label>
+      <input type="search" name="usersearch" id="" list="mysearch" />
+
+      <datalist id="mysearch">
+        <option value="SRK"></option>
+        <option value="SSR"></option>
+        <option value="DEVANSHU SIR"></option>
+      </datalist>
+
+      <br /><br />
+      <label for="">Gender</label>
+      <input type="radio" name="gender" id="" value="male" /><label for=""
+        >Male</label
+      >
+      <input type="radio" name="gender" id="" value="female" /><label for=""
+        >Female</label
+      >
+      <input type="radio" name="gender" id="" value="other" /><label for=""
+        >Other</label
+      >
+      <br /><br />
+
+      <label for="">Select Any One :- </label>
+      <select name="cars" id="">
+        <option value="bmw">Bmw</option>
+        <option value="honda">Honda</option>
+        <option value="mg">Mg</option>
+      </select>
+
+      <label for="">Subjects</label>
+      <input type="checkbox" name="sub" value="html" id="" checked /><label
+        for=""
+        >Html</label
+      >
+      <input type="checkbox" name="sub" id="" value="css" /><label for=""
+        >Css</label
+      >
+      <input type="checkbox" name="sub" id="" value="js" /><label for=""
+        >Js</label
+      >
+
+      <input type="reset" value="Reset Form" />
+
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
