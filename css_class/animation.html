@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            transition: all 3s;
+            animation-name: moveBox;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+        .box:hover{
+            width: 100%;
+            background-color: green;
+
+        }
+
+        .box2{
+            background-color: green;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            animation-name: moveBox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveBox{
+            from{
+                transform: translateX(0px);
+                background-color: red;
+            }
+
+            to{
+                transform: translateX(500px);
+                background-color: blue;
+            }
+        }
+
+        .box3{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            animation-name:colorChange ;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes colorChange{
+            0%{
+                background-color: green;
+            }
+
+            25%{
+                background-color: red;
+            }
+
+            50%{
+                background-color: yellow;
+                border-radius: 100%;
+            }
+
+            80%{
+                background-color: blue;
+                box-shadow: 3px 4px 8px 7px green;
+            }
+
+            100%{
+                background-color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+
+</body>
+</html>
