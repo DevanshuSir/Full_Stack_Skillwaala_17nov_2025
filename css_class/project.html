@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+    </head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #f8fafc;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 70px;
+        background-color: rgba(29, 37, 56, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        border-bottom: 1px solid white;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .logo i {
+        color: orange;
+      }
+
+      .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        color: orange;
+      }
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+      }
+
+      .hero-content h1 span {
+        color: #38bdf8;
+      }
+
+      .hero-content p {
+        color: #cbd5e1;
+        margin-top: 10px;
+      }
+
+      .socail-links {
+        margin-top: 15px;
+      }
+
+      .socail-links a {
+        color: #38bdf8;
+        font-size: 1.5rem;
+        margin: 0 10px;
+      }
+
+      .socail-links a:hover {
+        color: orange;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #38bdf8;
+        text-decoration: none;
+        color: white;
+        padding: 10px 25px;
+        margin-top: 20px;
+        border-radius: 28px;
+      }
+
+      .btn:hover {
+        background-color: orange;
+      }
+
+      section{
+        text-align: center;
+        padding: 80px 60px;
+      }
+
+      .about h2{
+        margin-bottom: 20px;
+        color: #f8fafc;
+      }
+
+      .about p{
+        color: #cbd5e1;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .skill-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .skill{
+        background-color: #1e293b;
+        padding: 15px 25px;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+
+      .skill i{
+        margin-right: 8px;
+        color: orange;
+      }
+
+      .skill:hover{
+        transform: translateY(-5px);
+        background-color: #38bdf8;
+        color: #0f172a;
+      }
+
+      .project-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+        gap: 28px;
+        margin-top: 30px;
+      }
+
+      .project-card{
+        background-color: rgba(255,255,255,0.05);
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.01);
+      }
+
+
+      .project-card i{
+        font-size: 2rem;
+        color: #38bdf8;
+        margin-bottom: 10px;
+      }
+
+      .contact form{
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        gap: 18px;
+        max-width: 500px;
+      }
+
+      .contact input, textarea{
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+
+      }
+
+      .contact button{
+        background-color: #38bdf8;
+        border: none;
+        padding: 12px;
+        border-radius: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .contact button:hover{
+        background-color: orange;
+        color: white;
+      }
+
+      footer{
+        text-align: center;
+        background-color: rgba(29, 37, 56, 0.8);
+        padding: 15px;
+        color: #cbd5e1;
+        font-size: 0.9rem;
+       border-top: 1px solid white;
+
+      }
+
+      @media (max-width:768px){
+        .navbar{
+          flex-direction: column;
+          gap: 10px;
+          padding: 16px;
+        }
+
+        .hero-content h1{
+          font-size: 2.1rem;
+        }
+
+        section{
+          padding: 60px 20px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo"><i class="fa-solid fa-code"></i> Dev Portfolio</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Hello I'm <span>Devanshu</span></h1>
+        <p>Full Stack Developer | Trainer | Content Creator</p>
+        <div class="socail-links">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="" class="btn">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+     <section id="about" class="about">
+      <h2><i class="fa-solid fa-user"></i> About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ab ducimus autem cupiditate, natus modi voluptatibus facere harum officiis minus!</p>
+     </section>
+
+
+     <!-- Skills -->
+
+     <section id="skills" class="skills">
+        <h2><i class="fa-solid fa-laptop-code"></i> My Skills</h2>
+        <div class="skill-container">
+          <div class="skill"><i class="fa-brands fa-html5"></i>HTML</div>
+          <div class="skill"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+          <div class="skill"><i class="fa-brands fa-js"></i>JavaScript</div>
+          <div class="skill"><i class="fa-brands fa-react"></i>React</div>
+          <div class="skill"><i class="fa-brands fa-node"></i>Node.Js</div>
+          <div class="skill"><i class="fa-solid fa-database"></i>MongoDB</div>
+        </div>
+     </section>
+
+
+     <!-- Projects -->
+     <section class="projects" id="projects">
+      <h2><i class="fa-solid fa-chart-line"></i> Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <i class="fa-solid fa-address-card"></i>
+          <h3>Portfolio Website</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, laboriosam.</p>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>E-commerce Website</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, laboriosam.</p>
+        </div>
+        <div class="project-card">
+          <i class="fa-solid fa-comment"></i>
+          <h3>Chat-App</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, laboriosam.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+      <h2><i class="fa-solid fa-phone"></i> Contact Me</h2>
+      <form action="">
+        <input type="text" name="" id="" placeholder="Your Name">
+        <input type="email" name="" id="" placeholder="Your Email">
+        <textarea name="" id="" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>@2026 Devanshu Sir | Made with HTML & CSS</p>
+    </footer>
+
+  </body>
+</html>
+
+
+

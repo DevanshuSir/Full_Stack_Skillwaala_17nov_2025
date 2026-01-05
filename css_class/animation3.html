@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box > div{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            /* background-color: red; */
+            border-radius: 100%;
+            animation-name: balls;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        
+        }
+
+  
+        .container3{
+            background-color: yellow;
+            animation-timing-function: ease-in;
+        }
+        .container4{
+            background-color: brown;
+            animation-timing-function: ease-in-out;
+        }
+        .container5{
+            background-color: turquoise;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes balls{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(400px);
+            }
+        }
+
+
+        .spinner{
+            border: 4px solid green;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border-top: 4px solid brown;
+            animation-name: spinner_run;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 3s;
+            animation-direction: alternate;
+        }
+
+        /* .spinner:hover{
+          animation: none;
+        } */
+
+        /* .spinner:hover{
+animation-name: spinner_run;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 3s;
+        } */
+
+        @keyframes spinner_run{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container1"></div>
+        <div class="container2"></div>
+        <div class="container3"></div>
+        <div class="container4"></div>
+        <div class="container5"></div>
+    </div>
+
+    <div class="spinner"></div>
+</body>
+</html>
