@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bs-primary);
+  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIg8JMSGI4U1ZFOUbBX-hzBWQ_5UULxH_-NkyJ25NTuzNMI1gR0z8l3I&s"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae, nesciunt..
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIg8JMSGI4U1ZFOUbBX-hzBWQ_5UULxH_-NkyJ25NTuzNMI1gR0z8l3I&s"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIg8JMSGI4U1ZFOUbBX-hzBWQ_5UULxH_-NkyJ25NTuzNMI1gR0z8l3I&s"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3 px-4">
+      <div class="row">
+        <div class="col-md-6 col-lg-2 offset-lg-1 p-3 bg-danger text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
+          commodi voluptatibus numquam temporibus provident libero earum
+          asperiores sequi, molestiae illum, non eligendi expedita aut quaerat
+          ipsum tenetur reiciendis. Nihil!
+        </div>
+        <div class="col-md-6 col-lg-2 offset-lg-1 p-3 bg-dark text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          inventore aperiam a libero quisquam facilis dolorum quibusdam
+          similique id? Aspernatur doloremque reiciendis, atque dolore sed
+          deleniti ipsum temporibus in pariatur.
+        </div>
+        <div class="col-md-6 col-lg-2 offset-lg-1 p-3 bg-success text-light">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          eius veritatis quas voluptates repellat, laborum unde at minima.
+          Accusamus quisquam eius ad quas cupiditate. Ratione, aperiam!
+          Accusamus pariatur non doloremque.
+        </div>
+        <div class="col-md-6 col-lg-2 offset-lg-1 p-3 bg-warning text-light">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto,
+          dolorum vitae praesentium quo incidunt voluptatum ullam, rem esse nemo
+          eveniet blanditiis inventore officia quasi quis voluptate, nisi
+          aliquid aspernatur repellat.
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Q.1 Why are Skillwaala’s courses free?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Ans. Skillwaala is a free education initiative by BR Softech,
+                  a reputed IT company in Jaipur, aimed at empowering students
+                  and professionals with real-world skills to become job-ready
+                  without any financial burden. At Skillwaala, we believe that
+                  education is a human right and should be accessible to
+                  everyone, irrespective of financial standing. To achieve this
+                  mission, we offer completely free courses to all our students.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Q.2 Does Skill Waala provide complete courses?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Ans. Skill Waala offers comprehensive, free courses lasting 4
+                  to 6 months, available in both offline and online formats,
+                  without compromising on quality. If you wish to learn a
+                  specific section of a course, you can visit our YouTube
+                  channel (Skillwaala), where you can navigate directly to the
+                  section you're interested in by adjusting the timestamp on the
+                  video.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Q.3 Are there any hidden charges associated with Skillwaala’s
+                  courses?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Ans. No, we do not take any fees or hidden charges either for
+                  the course or any tools, software or hosting services that may
+                  be used during the duration of the course.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Q.4 What support will I get after completing a course from
+                  Skillwaala?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Ans. No, we do not take any fees or hidden charges either for
+                  the course or any tools, software or hosting services that may
+                  be used during the duration of the course.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-2">
+          <button type="button" class="btn btn-secondary position-relative">
+            Mail
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+            >
+              5
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </div>
+
+        <div class="col-md-2">
+          <div class="btn-group">
+            <button class="btn btn-danger">One</button>
+            <button class="btn btn-success">Two</button>
+            <button class="btn btn-warning">Three</button>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card">
+            <img
+              src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dev</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="btn btn-danger">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <p>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+            >
+              Toggle width collapse
+            </button>
+          </p>
+          <div style="min-height: 120px">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 300px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis cum numquam tempore. In numquam ratione odio quia
+                alias dolores placeat.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-md-2">
+          <div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+        </div>
+
+       
+      </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 67%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">67%</div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
