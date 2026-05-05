@@ -1,0 +1,49 @@
+.main{
+    background-color: rgb(215, 214, 214);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.task{
+    padding: 10px;
+    width: 29%;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: rgb(141, 209, 211);
+    border-radius: 8px;
+    box-shadow: 0px 1px 7px 3px rgba(0,0,0,0.6);
+
+}
+
+.alltask{
+    font-weight: bold;
+    font-size: 17px;
+    padding: 1rem;
+    background-color: rgba(61, 61, 61, 0.518);
+    margin: 10px;
+    border-radius: 10px;
+   
+}
+
+.checkBox{
+    accent-color: rgb(214, 91, 9);
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icons{
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.darkIcon{
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,73 @@
+**Version -> monngod --Version
+
+
+**Mongosh -> Connection String (Connect)
+
+**Show dbs -> Show all Database
+
+**use db_name -> Enter in db / Create a db 
+
+**show collections -> Show collections in db 
+
+**db.collection_name.drop() -> collection delete
+
+**db.createCollection("collections_name") -> create a new collection
+
+**db.dropDatabase() -> Db Delete
+
+**db - check Database
+
+////File Read (Read)
+**db.collection_name.find()
+**db.collection_name.findOne()
+**db.collection_name.find({"price":799})
+**db.collection_name.findOne({"price":599})
+**Comparison Operator 
+**db.collection_name.find({"price":{$gt:599}})
+**db.collection_name.find({"price":{$lt:599}})
+**db.collection_name.find({"price":{$gte:599}})
+**db.collection_name.find({"price":{$lte:599}})
+**db.collection_name.find({"price":{$ne:599}})
+**Logical Operator
+**db.collection_name.find({$and:[{"email":"dev@gmail.com"},{"pass":12345}]}) //1st-True 2nd-True = true 
+**db.collection_name.find({$or:[{"email":"dev@gmail.com"},{"pass":12345}]}) // 1st-True 2nd-false = true 
+
+//Sorting and Limiting  and count
+db.collection_name.find().sort({"price":1}) // asc
+db.collection_name.find().sort({"price":-1}) // desc
+db.collection_name.find().limit(2)
+db.collection_name.find().skip(1)
+db.collection_name.countDocuments()
+db.collection_name.countDocuments({"price":599})
+
+
+
+////Insert Doc (Create)
+**db.collection_name.insertOne({}) -> Single Doc Insert
+**db.collection_name.insertMany([{},{},{}]) -> Multiple Doc Insert
+
+
+
+////Update 
+db.collection_name.updateOne({"price":599},{$set:{"price":999}}
+)
+db.collection_name.updateMany({"price":799},{$set:{"price":1599}})
+// replace
+db.collection_name.replaceOne({"name":"dev"},{"name":"laptop","price":89999})
+
+
+////Delete
+db.collection_name.deleteOne({"price":1599})
+db.collection_name.deleteMany({"price":999})
+db.collection_name.deleteMany({}) - Delete All Data
+
+
+
+/// Aggregation
+db.collection_name.aggregate([
+    {stage1},
+    {stage2}
+])
+
+// $match $count $sort $group $sum $project $limit
+ 

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="darkMode()" id="btndarkMode">Dark</button>
+
+
+    <input type="color" name="" id="colorSelect" onchange="colorPicker()">
+
+    <p id="colorOutput">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam tempora
+      nihil tempore porro quae culpa dolor deleniti possimus nesciunt obcaecati.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse neque enim
+      nihil et a reprehenderit fuga dolore vitae atque quasi.
+    </p>
+
+    <label for="">Select Your Model</label>
+    <select name="" id="phone" onchange="phone()">
+        <option value="">--Select--</option>
+        <option value="Iphone-15">Iphone-15</option>
+        <option value="Iphone-16">Iphone-16</option>
+        <option value="Iphone-17">Iphone-17</option>
+    </select>
+    <p id="selectedModel"></p>
+
+    <textarea name="" id="" onselect="selectValue()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ut beatae? Corrupti dolore sequi inventore accusamus ut at officiis sed!
+    </textarea>
+    <p id="msgtext"></p>
+
+
+    <input type="password" name="" id="pass">
+    <button onclick="password()" id="passBtn">Show</button>
+
+  </body>
+
+
+  <script>
+
+    function darkMode(){
+        let bgColor = document.body.style.backgroundColor
+
+        if(bgColor==="" || bgColor === "white"){
+            document.body.style.backgroundColor = "black"
+            document.body.style.color = "white"
+            document.getElementById("btndarkMode").textContent = "Light"
+        }else{
+            document.body.style.backgroundColor = "white"
+            document.body.style.color = "black"
+             document.getElementById("btndarkMode").textContent = "Dark"
+        }
+
+    }
+
+   function phone(){
+     let phoneValue =  document.getElementById("phone").value
+    document.getElementById("selectedModel").textContent = "You Select :- " + phoneValue
+   }
+
+   function selectValue(){
+    document.getElementById("msgtext").textContent = "Text Select 🫵"
+   }
+
+
+   function colorPicker(){
+     let colorSelected = document.getElementById("colorSelect").value
+    document.getElementById("colorOutput").style.color = colorSelected
+   }
+
+
+   function password(){
+    let passwordUser =   document.getElementById("pass")
+
+    if(passwordUser.type === "password"){
+        passwordUser.type = "text"
+        document.getElementById("passBtn").textContent = "Hide"
+    }else{
+      passwordUser.type = "password"
+      document.getElementById("passBtn").textContent = "Show"
+    }
+
+   }
+
+   // point 1 - event
+   // point 2 - dom
+  
+
+  </script>
+</html>

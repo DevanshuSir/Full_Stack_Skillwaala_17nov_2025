@@ -1,0 +1,22 @@
+[
+    {
+    "name":"Devanshu",
+    "age":67,
+    "city":"Jaipur",
+    "hobby":["Dance","Music"],
+    "details":{
+        "pinCode":57878,
+        "address":"Vaishali nagar jaipur"
+    }
+},
+{
+    "name":"aman",
+    "age":56,
+    "city":"Ajmer",
+    "hobby":["Dance","Music"],
+    "details":{
+        "pinCode":57878,
+        "address":"Vaishali nagar jaipur"
+    }
+}
+]
