@@ -44,3 +44,10 @@
 
 /weather_app/weather/node_modules
 /weather_app/weather/package-lock.json
+
+
+/blog_app_project/backend/node_modules
+/blog_app_project/backend/package-lock.json
+
+/blog_app_project/blog/node_modules
+/blog_app_project/blog/package-lock.json
